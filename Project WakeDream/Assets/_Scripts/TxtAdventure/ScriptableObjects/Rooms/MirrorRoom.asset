@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6c1dfde316082645948bf971b8c8d41, type: 3}
+  m_Name: MirrorRoom
+  m_EditorClassIdentifier: 
+  roomDescription: You see a row of tall candles flickering on the left and the right
+    of the room. In the back of the room in front of you, you see a mirror with a
+    faint figure being projected back at you.
+  roomName: Mirror Room
+  exits:
+  - keyString: south
+    exitDescription: There is a door to the south with light coming through it.
+    valueRoom: {fileID: 11400000, guid: 8f23f07696e7e2c42bb15f674351c277, type: 2}
+  - keyString: east
+    exitDescription: There is a walkway to the east
+    valueRoom: {fileID: 11400000, guid: f24af3b34af55e4408b4ceabc26b9927, type: 2}
+  interactableObjects: []
