@@ -501,6 +501,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c1f37f4f7c3d57b4e87025d3e2217b64, type: 2}
   - {fileID: 11400000, guid: 2104fd2dec11ba848a36db84f1ca817b, type: 2}
   - {fileID: 11400000, guid: f88ca4fa4ad0c424bbbdb3ad4af0518e, type: 2}
+  - {fileID: 11400000, guid: fb016ecf8ef11fb43a5422d221adb9e7, type: 2}
 --- !u!114 &108128694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,6 +538,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nounsInRoom: []
+  usableItemList:
+  - {fileID: 11400000, guid: 7c2758a0f72f02a45b646b329a3c2ee9, type: 2}
 --- !u!1 &187962445
 GameObject:
   m_ObjectHideFlags: 0
@@ -50303,11 +50306,11 @@ RectTransform:
   m_Father: {fileID: 1165975118}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -329.55}
-  m_SizeDelta: {x: 1261, y: 42.1}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -64, y: 42.100006}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &2101462397
 MonoBehaviour:
   m_ObjectHideFlags: 0

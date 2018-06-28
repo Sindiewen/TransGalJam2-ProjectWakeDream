@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6c1dfde316082645948bf971b8c8d41, type: 3}
+  m_Name: EndRoom
+  m_EditorClassIdentifier: 
+  roomDescription: 'You walk through this dark hallay for what seems to be an eternity.
+    Eventually you reach the outside world.
+
+    When your eyes adjust to your surroundings, you notice you''re in a huge field
+    of sunflowers at least twice your height and size! You look behind you aand the
+    entrance from where your emerged is no longer there.'
+  roomName: End Room
+  exits:
+  - keyString: up
+    exitDescription: You notice that theres a tall tree that goes up into the sky.
+    valueRoom: {fileID: 11400000, guid: 07fdc74ef09e0f94791d463439c68bb6, type: 2}
+  interactableObjects: []

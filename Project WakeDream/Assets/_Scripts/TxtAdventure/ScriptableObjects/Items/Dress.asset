@@ -16,5 +16,10 @@ MonoBehaviour:
   interactions:
   - inputAction: {fileID: 11400000, guid: c1f37f4f7c3d57b4e87025d3e2217b64, type: 2}
     textResponse: The dress is frilly with lots of lace and a flower pattern. Cute!
+    actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 2104fd2dec11ba848a36db84f1ca817b, type: 2}
     textResponse: You take the dress.
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: fb016ecf8ef11fb43a5422d221adb9e7, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 11400000, guid: f69d1934834ba784d88757619d7e09df, type: 2}
