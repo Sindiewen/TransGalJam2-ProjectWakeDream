@@ -18,5 +18,9 @@ MonoBehaviour:
 
     Thank you for playing this demo! Press alt + f4 to quit uwu'
   roomName: End Room Tree
-  exits: []
+  exits:
+  - keyString: wake
+    exitDescription: It's time to wake up, wake up and return to the world of the
+      waking. (go wake)
+    valueRoom: {fileID: 11400000, guid: a63799f36d8554b48bcd6cd94f30641f, type: 2}
   interactableObjects: []

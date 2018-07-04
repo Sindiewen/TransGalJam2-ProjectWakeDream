@@ -106,8 +106,8 @@ public class TxtAdvController : MonoBehaviour
     private void Start()
     {
         // starts initial room
-        DisplayRoomText();
-        DisplayLoggedText();
+        //DisplayRoomText();
+        //DisplayLoggedText();
     }
 
 
