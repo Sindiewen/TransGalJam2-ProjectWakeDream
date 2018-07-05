@@ -514,7 +514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d684865fd2da04b9905eeadc449e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentRoom: {fileID: 11400000, guid: 8f23f07696e7e2c42bb15f674351c277, type: 2}
+  currentRoom: {fileID: 11400000, guid: 0f8e6b6b4ccd0c5408b9ba2f59a1def3, type: 2}
   VNSwitch: {fileID: 108128697}
 --- !u!114 &108128695
 MonoBehaviour:
@@ -557,15 +557,12 @@ MonoBehaviour:
   blockToExecute: Dream State
   VN: {fileID: 912662916}
   TA: {fileID: 1165975117}
-  _controller: {fileID: 108128693}
-  _roomNav: {fileID: 108128694}
   exitToVNRoom: {fileID: 11400000, guid: a63799f36d8554b48bcd6cd94f30641f, type: 2}
-  _TAText: {fileID: 898883312}
   _inputField: {fileID: 2101462397}
   StoryRooms:
-  - {fileID: 11400000, guid: 8f23f07696e7e2c42bb15f674351c277, type: 2}
-  - {fileID: 11400000, guid: 07fdc74ef09e0f94791d463439c68bb6, type: 2}
-  - {fileID: 11400000, guid: 6d0ea33bc69e7194a953d758d3e11526, type: 2}
+  - {fileID: 11400000, guid: 0f8e6b6b4ccd0c5408b9ba2f59a1def3, type: 2}
+  - {fileID: 11400000, guid: 0f8e6b6b4ccd0c5408b9ba2f59a1def3, type: 2}
+  - {fileID: 11400000, guid: 0f8e6b6b4ccd0c5408b9ba2f59a1def3, type: 2}
 --- !u!1 &187962445
 GameObject:
   m_ObjectHideFlags: 0
@@ -1693,7 +1690,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 521359163}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -666.8053, y: -438.3701, z: -0.4213882}
+  m_LocalPosition: {x: -666.8053, y: -438.3701, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 404836494}
@@ -1824,8 +1821,9 @@ GameObject:
   - component: {fileID: 547588421}
   - component: {fileID: 547588422}
   - component: {fileID: 547588423}
-  - component: {fileID: 547588313}
   - component: {fileID: 547588424}
+  - component: {fileID: 547588313}
+  - component: {fileID: 547588425}
   m_Layer: 0
   m_Name: SleepTree
   m_TagString: Untagged
@@ -1872,7 +1870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -523.3138, y: 38.6149}
+  scrollPos: {x: -424.31378, y: 28.614899}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -1885,11 +1883,11 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 547588320}
-  selectedCommands:
-  - {fileID: 547588424}
+  selectedCommands: []
   variables:
   - {fileID: 547588329}
   - {fileID: 547588422}
+  - {fileID: 547588425}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -4848,7 +4846,7 @@ MonoBehaviour:
   targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &547588424
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 547588309}
@@ -4869,6 +4867,20 @@ MonoBehaviour:
   waitUntilFinished: 1
   durationOLD: 0
   targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &547588425
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547588309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: dreamText
+  value: 
 --- !u!1 &574681668
 GameObject:
   m_ObjectHideFlags: 1
@@ -28597,7 +28609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 108128690}
   sleepTreeHappinessEvents: {fileID: 415028860}
-  homeTreeMorning: {fileID: 1417568133}
+  sleepTree: {fileID: 547588311}
 --- !u!1 &888214937
 GameObject:
   m_ObjectHideFlags: 0
@@ -44175,7 +44187,6 @@ GameObject:
   - component: {fileID: 1417568203}
   - component: {fileID: 1417568201}
   - component: {fileID: 1417568264}
-  - component: {fileID: 1417568258}
   - component: {fileID: 1417568263}
   - component: {fileID: 1417568262}
   - component: {fileID: 1417568255}
@@ -44396,10 +44407,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 1417568252}
   selectedCommands: []
   variables:
-  - {fileID: 1417568258}
   - {fileID: 1417568266}
   - {fileID: 1417568269}
   - {fileID: 1417568288}
@@ -47481,20 +47492,6 @@ MonoBehaviour:
     booleanVal: 1
   affectChildren: 0
   visibleOLD: 0
---- !u!114 &1417568258
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1417568131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 1
-  key: dreamText
-  value: 
 --- !u!114 &1417568259
 MonoBehaviour:
   m_ObjectHideFlags: 2

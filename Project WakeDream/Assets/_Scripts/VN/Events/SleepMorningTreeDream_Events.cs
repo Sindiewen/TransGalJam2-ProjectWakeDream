@@ -8,7 +8,7 @@ public class SleepMorningTreeDream_Events : MonoBehaviour
     // Gets the reference to the sleepTreeHappiness events to allow calculating the happiness values
     public SleepTreeHappinessEvents sleepTreeHappinessEvents;
 
-    public Flowchart homeTreeMorning;
+    public Flowchart sleepTree;
 
 
 
@@ -76,7 +76,7 @@ public class SleepMorningTreeDream_Events : MonoBehaviour
             dreamText = "You didnt have a dream last night. You fell asleep and just woke up in what you thought was an instant.";
         }
 
-        homeTreeMorning.SetStringVariable("dreamText", dreamText);
+        sleepTree.SetStringVariable("dreamText", dreamText);
 
     }
 }

@@ -18,17 +18,16 @@ public class DreamVNSwitch : MonoBehaviour
     public GameObject TA;
 
     // Text adventure controller
-    public TxtAdvController _controller;
-    public RoomNavigation _roomNav;
+    private TxtAdvController _controller;
+    private RoomNavigation _roomNav;
     public Room exitToVNRoom;
-    public Text _TAText;
     public InputField _inputField;
     public Room[] StoryRooms;           // Stores rooms for the story
 
 
     // Private variables
-    private bool _isInVN;
-    private bool _isInTA;
+    //private bool _isInVN;
+    //private bool _isInTA;
 
 
 
@@ -43,8 +42,8 @@ public class DreamVNSwitch : MonoBehaviour
     /// </summary>
     public void enterTA()
     {
-        _isInTA = true;
-        _isInVN = false;
+        //_isInTA = true;
+        //_isInVN = false;
 
         // Disable the VN stuff, enable TA stuff
         VN.SetActive(false);
@@ -53,10 +52,11 @@ public class DreamVNSwitch : MonoBehaviour
         // Enter next room for dream world, ensure that it prints next room and everything
         _roomNav.currentRoom = StoryRooms[sleepTree.GetIntegerVariable("DayCount")];
 
-        // emptires ta text
-        _TAText.text = "";
-
-        // Displayes the text
+        // Prints out tons of blank space
+        _controller.LogStringWithReturn("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" +
+            "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+        
+        // Prints new room text
         _controller.DisplayRoomText();
         _controller.DisplayLoggedText();
 
@@ -73,20 +73,17 @@ public class DreamVNSwitch : MonoBehaviour
     /// </summary>
     public void enterVN()
     {
-        _isInVN = true;
-        _isInTA = false;
+        //_isInVN = true;
+        //_isInTA = false;
 
-        if (_isInVN)
-        {
-            VN.SetActive(true);
-            TA.SetActive(false);
+        VN.SetActive(true);
+        TA.SetActive(false);
 
-            // Iterates day by 1
-            sleepTree.SetIntegerVariable("DayCount", sleepTree.GetIntegerVariable("DayCount") + 1);
+        // Iterates day by 1
+        sleepTree.SetIntegerVariable("DayCount", sleepTree.GetIntegerVariable("DayCount") + 1);
 
-            // Calls the block that starts the VN
-            sleepTree.ExecuteBlock(blockToExecute);
-        }
+        // Calls the block that starts the VN
+        sleepTree.ExecuteBlock(blockToExecute);
 
         
     }
@@ -100,21 +97,9 @@ public class DreamVNSwitch : MonoBehaviour
     #region private func
     private void Start()
     {
-        // Defines the start of the game. VN goes first
-        _isInVN = true;
-        _isInTA = false;
-        //enterVN();
-
+        _controller = GetComponent<TxtAdvController>();
+        _roomNav = GetComponent<RoomNavigation>();
     }
 
-/*
-    private void Update()
-    {
-        if (_roomNav.currentRoom.name == exitToVNRoom.name)
-        {
-            enterVN();
-        }
-    }
-    */
     #endregion
 }
