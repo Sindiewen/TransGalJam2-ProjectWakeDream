@@ -5,6 +5,7 @@ using UnityEngine;
 public class RoomNavigation : MonoBehaviour
 {
     public Room currentRoom;
+    public DreamVNSwitch VNSwitch;
 
 
     // priavte varialbes
@@ -42,6 +43,13 @@ public class RoomNavigation : MonoBehaviour
         {
             // Get the current room to the new room
             currentRoom = exitDictionary[directionNoun];
+
+            // If the next room to change to is the exit to vn room, switch to vn
+            if (currentRoom == VNSwitch.exitToVNRoom)
+            {
+                // This is the exit room. Exit to the VN
+                VNSwitch.enterVN();
+            }
 
             _controller.LogStringWithReturn("You head off to the " + directionNoun);
 

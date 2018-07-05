@@ -515,6 +515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentRoom: {fileID: 11400000, guid: 8f23f07696e7e2c42bb15f674351c277, type: 2}
+  VNSwitch: {fileID: 108128697}
 --- !u!114 &108128695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -558,11 +559,13 @@ MonoBehaviour:
   TA: {fileID: 1165975117}
   _controller: {fileID: 108128693}
   _roomNav: {fileID: 108128694}
-  exitToVNRoom: {fileID: 0}
+  exitToVNRoom: {fileID: 11400000, guid: a63799f36d8554b48bcd6cd94f30641f, type: 2}
   _TAText: {fileID: 898883312}
   _inputField: {fileID: 2101462397}
   StoryRooms:
   - {fileID: 11400000, guid: 8f23f07696e7e2c42bb15f674351c277, type: 2}
+  - {fileID: 11400000, guid: 07fdc74ef09e0f94791d463439c68bb6, type: 2}
+  - {fileID: 11400000, guid: 6d0ea33bc69e7194a953d758d3e11526, type: 2}
 --- !u!1 &187962445
 GameObject:
   m_ObjectHideFlags: 0
@@ -1796,7 +1799,6 @@ GameObject:
   - component: {fileID: 547588316}
   - component: {fileID: 547588315}
   - component: {fileID: 547588314}
-  - component: {fileID: 547588313}
   - component: {fileID: 547588401}
   - component: {fileID: 547588405}
   - component: {fileID: 547588404}
@@ -1821,8 +1823,9 @@ GameObject:
   - component: {fileID: 547588420}
   - component: {fileID: 547588421}
   - component: {fileID: 547588422}
-  - component: {fileID: 547588424}
   - component: {fileID: 547588423}
+  - component: {fileID: 547588313}
+  - component: {fileID: 547588424}
   m_Layer: 0
   m_Name: SleepTree
   m_TagString: Untagged
@@ -1869,7 +1872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -310.31378, y: 77.6149}
+  scrollPos: {x: -523.3138, y: 38.6149}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -1881,9 +1884,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 547588420}
+  - {fileID: 547588320}
   selectedCommands:
-  - {fileID: 547588421}
+  - {fileID: 547588424}
   variables:
   - {fileID: 547588329}
   - {fileID: 547588422}
@@ -2073,7 +2076,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 1167.0623
-    y: 162.73392
+    y: 161.73392
     width: 123
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4778,7 +4781,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 993.9103
-    y: 279.36996
+    y: 280.36996
     width: 152
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4822,7 +4825,7 @@ MonoBehaviour:
   value: 0
 --- !u!114 &547588423
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 547588309}
@@ -4851,17 +4854,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 547588309}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10cd462c89cb047158ccfb8a8df3f60a, type: 3}
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 248
+  itemId: 250
   indentLevel: 0
   spriteRenderer: {fileID: 1064457867}
-  _visible:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  affectChildren: 0
-  visibleOLD: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  _targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
+  waitUntilFinished: 1
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &574681668
 GameObject:
   m_ObjectHideFlags: 1

@@ -76,14 +76,19 @@ public class DreamVNSwitch : MonoBehaviour
         _isInVN = true;
         _isInTA = false;
 
-        VN.SetActive(true);
-        TA.SetActive(false);
+        if (_isInVN)
+        {
+            VN.SetActive(true);
+            TA.SetActive(false);
 
-        // Iterates day by 1
-        sleepTree.SetIntegerVariable("DayCount", sleepTree.GetIntegerVariable("DayCount") + 1);
+            // Iterates day by 1
+            sleepTree.SetIntegerVariable("DayCount", sleepTree.GetIntegerVariable("DayCount") + 1);
 
-        // Calls the block that starts the VN
-        sleepTree.ExecuteBlock(blockToExecute);
+            // Calls the block that starts the VN
+            sleepTree.ExecuteBlock(blockToExecute);
+        }
+
+        
     }
 
 
@@ -102,7 +107,7 @@ public class DreamVNSwitch : MonoBehaviour
 
     }
 
-
+/*
     private void Update()
     {
         if (_roomNav.currentRoom.name == exitToVNRoom.name)
@@ -110,5 +115,6 @@ public class DreamVNSwitch : MonoBehaviour
             enterVN();
         }
     }
+    */
     #endregion
 }
