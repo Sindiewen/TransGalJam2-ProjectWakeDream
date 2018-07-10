@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a61e6542ca67d084b8dd9bc539d99792, type: 3}
+  m_Name: _City_Queen_Lolita
+  m_EditorClassIdentifier: 
+  noun: lolita
+  description: A purple lolita dress.
+  interactions:
+  - inputAction: {fileID: 11400000, guid: c1f37f4f7c3d57b4e87025d3e2217b64, type: 2}
+    textResponse: A purple lolita dress with cute bunnies dancing on the skirt. Comes
+      with a white blouse, bows, socks and shoes too!
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 2104fd2dec11ba848a36db84f1ca817b, type: 2}
+    textResponse: You take the lolita dress
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: fb016ecf8ef11fb43a5422d221adb9e7, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 11400000, guid: 0794257eb58b1de48ae58c104a87a601, type: 2}

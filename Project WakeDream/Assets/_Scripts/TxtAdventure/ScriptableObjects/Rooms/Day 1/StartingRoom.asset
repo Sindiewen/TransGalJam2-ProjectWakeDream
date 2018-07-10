@@ -18,3 +18,4 @@ MonoBehaviour:
   - keyString: north
     exitDescription: You see a door North of you.
     valueRoom: {fileID: 11400000, guid: a0235b29b231f674f94be7e5f3bd5541, type: 2}
+  interactableObjects: []

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6c1dfde316082645948bf971b8c8d41, type: 3}
+  m_Name: _TheCity_Queens Quarters_Closet
+  m_EditorClassIdentifier: 
+  roomDescription: You enter a closet and notice a nice tall mirror there, and a couple
+    cute outfits in there.
+  roomName: Queens Quarters Closet
+  exits:
+  - keyString: west
+    exitDescription: To the west you see the bedroom.
+    valueRoom: {fileID: 11400000, guid: a932c1d90951acf4784d9cee2f9fa709, type: 2}
+  interactableObjects:
+  - {fileID: 11400000, guid: ebe39062783b00545aa772f57783c152, type: 2}
+  - {fileID: 11400000, guid: 7486f4a4be322574a8af501080a0963a, type: 2}

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6c1dfde316082645948bf971b8c8d41, type: 3}
+  m_Name: SunflowerFieldChanged
+  m_EditorClassIdentifier: 
+  roomDescription: 'You throw the flash seed to the ground. You''re suddenly engulfed
+    in a blinding light. As you regain sight you notice the sunflowers are disolving
+    into the sky before your eyes.
+
+    The field is now replaced with deep rolling fields of green grass.'
+  roomName: Sunflower Field
+  exits:
+  - keyString: up
+    exitDescription: You notice that theres a tall tree that goes up into the sky.
+    valueRoom: {fileID: 11400000, guid: b6cb3a5dc34610b41916a49343ce283e, type: 2}
+  - keyString: north
+    exitDescription: You see a pathway in the grass in front of you to the north.
+    valueRoom: {fileID: 11400000, guid: 21ee129472f9b054d94be81c028d3aa8, type: 2}
+  interactableObjects: []

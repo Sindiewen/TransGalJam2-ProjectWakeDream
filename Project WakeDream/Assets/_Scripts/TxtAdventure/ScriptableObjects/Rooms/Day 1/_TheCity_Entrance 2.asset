@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6c1dfde316082645948bf971b8c8d41, type: 3}
+  m_Name: _TheCity_Entrance 2
+  m_EditorClassIdentifier: 
+  roomDescription: 'Considering how feminine you look, you try your luck and knock
+    on the door. Surely enough you see a women dressed top to bottom in full plate
+    armor with a spear pointed to you.
+
+
+    "My queen! We thought you got captured during our escape form the rebel base.
+    If you remember our negotiations went south and we had to run. Here come inside,
+    we''ll clean you right up and get you in your proper attire."'
+  roomName: City Entrance 2
+  exits:
+  - keyString: north
+    exitDescription: (Go north to continue)
+    valueRoom: {fileID: 11400000, guid: 817ada6c228a5e140b0fd1665e7b2b25, type: 2}
+  interactableObjects: []

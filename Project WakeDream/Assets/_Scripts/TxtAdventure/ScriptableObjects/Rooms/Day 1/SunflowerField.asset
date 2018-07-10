@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6c1dfde316082645948bf971b8c8d41, type: 3}
-  m_Name: EndRoom
+  m_Name: SunflowerField
   m_EditorClassIdentifier: 
   roomDescription: 'You walk through this dark hallay for what seems to be an eternity.
     Eventually you reach the outside world.
@@ -17,7 +17,7 @@ MonoBehaviour:
     When your eyes adjust to your surroundings, you notice you''re in a huge field
     of sunflowers at least twice your height and size! You look behind you aand the
     entrance from where your emerged is no longer there.'
-  roomName: End Room
+  roomName: Sunflower Field
   exits:
   - keyString: up
     exitDescription: You notice that theres a tall tree that goes up into the sky.

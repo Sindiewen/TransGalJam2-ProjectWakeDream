@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6c1dfde316082645948bf971b8c8d41, type: 3}
+  m_Name: _TheCity_Queens Quarters 1
+  m_EditorClassIdentifier: 
+  roomDescription: 'Suddenly you''re forcefully carried into the city. You see as
+    you''re being carried that this city is build like a weird mishmash of modern
+    day archetecture and medevil time''s styled building structures. You see lots
+    of beautiful women walking the strees in full plate armor, beautiful ball gowns,
+    frilly dresses with bows and lace, and even girls dressed in more modern, contemporary
+    clothing. A whole wide era clothing exsits in this whole city.
+
+
+    You''re carried into the castle into a big room with. Everyone is gathering around
+    you chanting "the queen is back, the queen is back!"'
+  roomName: Queens Quarters 1
+  exits:
+  - keyString: north
+    exitDescription: (Go north to continue)
+    valueRoom: {fileID: 11400000, guid: 799b354946baa0d43a788b1766f6ab7e, type: 2}
+  interactableObjects: []

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6c1dfde316082645948bf971b8c8d41, type: 3}
+  m_Name: UpTreeChanged
+  m_EditorClassIdentifier: 
+  roomDescription: You climb the tree to the very top and look out towards the distance.
+    You see a city on the horizon.
+  roomName: End Room Tree
+  exits:
+  - keyString: down
+    exitDescription: You can climb the tree back down.
+    valueRoom: {fileID: 11400000, guid: 7bfd977d7cafba7438a8c95914ca5a14, type: 2}
+  interactableObjects: []
