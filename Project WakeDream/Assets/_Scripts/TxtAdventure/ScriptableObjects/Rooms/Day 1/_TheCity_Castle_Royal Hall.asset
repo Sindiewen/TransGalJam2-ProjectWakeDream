@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6c1dfde316082645948bf971b8c8d41, type: 3}
+  m_Name: _TheCity_Castle_Royal Hall
+  m_EditorClassIdentifier: 
+  roomDescription: You walk down the hall and see that you're now inside a giant royal
+    hall where banquets, meetings and everything is held here.
+  roomName: Royal Hall
+  exits:
+  - keyString: north
+    exitDescription: To the north leads to the back of the royal hall.
+    valueRoom: {fileID: 11400000, guid: 4906ebe48f736cf4d98167984ce3d8e3, type: 2}
+  interactableObjects: []

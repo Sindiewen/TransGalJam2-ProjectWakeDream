@@ -11,7 +11,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c1dfde316082645948bf971b8c8d41, type: 3}
   m_Name: _TheCity_Castle_Hallway
   m_EditorClassIdentifier: 
-  roomDescription: 
-  roomName: 
-  exits: []
+  roomDescription: The room to the door behind you closes, you enter a long, empty
+    hallway with multiple doors leading to different locations. There are lanterns
+    on the walls lighting up this beautiful, regal hallway lined with gold.
+  roomName: Castle Hallway
+  exits:
+  - keyString: west
+    exitDescription: You see a door open to a library to the west.
+    valueRoom: {fileID: 11400000, guid: da4cf42ccae1ad542a1466d544208a1a, type: 2}
+  - keyString: east
+    exitDescription: You hear music playing to the east inside another room.
+    valueRoom: {fileID: 11400000, guid: 8d90e7f2fc21b194e8ad710023890f0e, type: 2}
+  - keyString: north
+    exitDescription: You see the hallway opens up to a giant royal hall to the north.
+    valueRoom: {fileID: 11400000, guid: 6575050679b612448aed28410c8ea9d1, type: 2}
   interactableObjects: []

@@ -546,6 +546,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ebe39062783b00545aa772f57783c152, type: 2}
   - {fileID: 11400000, guid: 7486f4a4be322574a8af501080a0963a, type: 2}
   - {fileID: 11400000, guid: b873de89b621f4a468e6d3ba0c45cabd, type: 2}
+  - {fileID: 11400000, guid: 9d7d4e937fa73294eb035008b9ba48de, type: 2}
 --- !u!114 &108128697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1794,9 +1795,7 @@ GameObject:
   - component: {fileID: 547588322}
   - component: {fileID: 547588321}
   - component: {fileID: 547588320}
-  - component: {fileID: 547588319}
   - component: {fileID: 547588318}
-  - component: {fileID: 547588317}
   - component: {fileID: 547588316}
   - component: {fileID: 547588315}
   - component: {fileID: 547588314}
@@ -1830,12 +1829,28 @@ GameObject:
   - component: {fileID: 547588427}
   - component: {fileID: 547588434}
   - component: {fileID: 547588433}
-  - component: {fileID: 547588432}
   - component: {fileID: 547588431}
   - component: {fileID: 547588430}
   - component: {fileID: 547588429}
   - component: {fileID: 547588426}
   - component: {fileID: 547588428}
+  - component: {fileID: 547588437}
+  - component: {fileID: 547588436}
+  - component: {fileID: 547588435}
+  - component: {fileID: 547588432}
+  - component: {fileID: 547588319}
+  - component: {fileID: 547588317}
+  - component: {fileID: 547588439}
+  - component: {fileID: 547588440}
+  - component: {fileID: 547588438}
+  - component: {fileID: 547588445}
+  - component: {fileID: 547588441}
+  - component: {fileID: 547588446}
+  - component: {fileID: 547588448}
+  - component: {fileID: 547588447}
+  - component: {fileID: 547588442}
+  - component: {fileID: 547588443}
+  - component: {fileID: 547588444}
   - component: {fileID: 547588313}
   m_Layer: 0
   m_Name: SleepTree
@@ -1883,10 +1898,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -623.6958, y: 133.52069}
+  scrollPos: {x: -718.7832, y: -137.84235}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 404
+  blockViewHeight: 587
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -1895,7 +1910,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 547588315}
+  - {fileID: 547588420}
   selectedCommands: []
   variables:
   - {fileID: 547588329}
@@ -1970,8 +1985,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 679.98627
-    y: 1.3218946
+    x: 680.98627
+    y: -0.67810535
     width: 196
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1997,7 +2012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 127
-  indentLevel: 1
+  indentLevel: 0
   targetFlowchart: {fileID: 1417568133}
   targetBlock: {fileID: 1417568252}
   startLabel:
@@ -2016,9 +2031,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 126
+  itemId: 265
   indentLevel: 1
-  storyText: '{$dreamText}'
+  storyText: As you wake up, you're trying to reccolect the dream you've had last
+    night. But alas, it slips your mind. The only thing you remember is a mirror.
+    You decide to just wake up and go about the day.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2065,14 +2082,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 547588309}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Script: {fileID: 11500000, guid: 18c5e8d46183346b59f64b820e71f97f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 124
+  itemId: 264
   indentLevel: 0
-  targetObject: {fileID: 855082125}
-  methodName: calculateDream
-  delay: 0
+  compareOperator: 0
+  variable: {fileID: 547588422}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 4
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
 --- !u!114 &547588320
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2098,14 +2129,17 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 547588424}
-  - {fileID: 547588319}
   - {fileID: 547588318}
   - {fileID: 547588434}
   - {fileID: 547588431}
+  - {fileID: 547588437}
+  - {fileID: 547588436}
+  - {fileID: 547588435}
   - {fileID: 547588432}
+  - {fileID: 547588319}
   - {fileID: 547588317}
-  - {fileID: 547588316}
   - {fileID: 547588433}
+  - {fileID: 547588316}
 --- !u!114 &547588321
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4795,8 +4829,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 993.9103
-    y: 280.36996
+    x: 994.9103
+    y: 277.36996
     width: 152
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4937,8 +4971,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1279.3137
-    y: 290.3851
+    x: 1280.3137
+    y: 292.3851
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4952,6 +4986,11 @@ MonoBehaviour:
   - {fileID: 547588429}
   - {fileID: 547588428}
   - {fileID: 547588426}
+  - {fileID: 547588440}
+  - {fileID: 547588439}
+  - {fileID: 547588438}
+  - {fileID: 547588445}
+  - {fileID: 547588441}
 --- !u!114 &547588428
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5064,11 +5103,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 547588309}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fa968f01a7f9496bb50e13dfe16760d, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 254
-  indentLevel: 0
+  itemId: 263
+  indentLevel: 1
+  storyText: 
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &547588433
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5102,7 +5154,7 @@ MonoBehaviour:
     booleanVal: 0
   integerData:
     integerRef: {fileID: 0}
-    integerVal: 4
+    integerVal: 1
   floatData:
     floatRef: {fileID: 0}
     floatVal: 0
@@ -5112,6 +5164,346 @@ MonoBehaviour:
   gameObjectData:
     gameObjectRef: {fileID: 0}
     gameObjectVal: {fileID: 0}
+--- !u!114 &547588435
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547588309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18c5e8d46183346b59f64b820e71f97f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 262
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 547588422}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 2
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+--- !u!114 &547588436
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547588309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 261
+  indentLevel: 1
+  storyText: 
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &547588437
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547588309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18c5e8d46183346b59f64b820e71f97f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 260
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 547588422}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 3
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+--- !u!114 &547588438
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547588309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 268
+  indentLevel: 0
+  storyText: Would you like to quit or restart?
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 0
+  waitForClick: 0
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &547588439
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547588309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 266
+  indentLevel: 0
+  storyText: 'Programming/Art/Design: Rachel Vancleave - @Sindiewen
+
+    Prototype project made for trans gal jam 2 #transgaljam'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &547588440
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547588309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 267
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
+--- !u!114 &547588441
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547588309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 270
+  indentLevel: 0
+  text: Restart Game
+  description: 
+  targetBlock: {fileID: 547588442}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &547588442
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547588309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 1408.0475
+    y: 361.09354
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 274
+  blockName: restart
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 547588444}
+  - {fileID: 547588443}
+--- !u!114 &547588443
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547588309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 275
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: wakedream
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
+--- !u!114 &547588444
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547588309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 276
+  indentLevel: 0
+  storyText: The game will restart.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &547588445
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547588309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 269
+  indentLevel: 0
+  text: Quit game
+  description: 
+  targetBlock: {fileID: 547588446}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &547588446
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547588309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 1151.2421
+    y: 370.57013
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 271
+  blockName: Quit Block
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 547588448}
+  - {fileID: 547588447}
+--- !u!114 &547588447
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547588309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e1337544a71d4d5dab5510fe86ddca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 273
+  indentLevel: 0
+--- !u!114 &547588448
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547588309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 272
+  indentLevel: 0
+  storyText: Thank you for playing!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &574681668
 GameObject:
   m_ObjectHideFlags: 1
@@ -44578,6 +44970,13 @@ GameObject:
   - component: {fileID: 1417568316}
   - component: {fileID: 1417568318}
   - component: {fileID: 1417568315}
+  - component: {fileID: 1417568323}
+  - component: {fileID: 1417568322}
+  - component: {fileID: 1417568321}
+  - component: {fileID: 1417568320}
+  - component: {fileID: 1417568319}
+  - component: {fileID: 1417568258}
+  - component: {fileID: 1417568324}
   m_Layer: 0
   m_Name: HomeTree - Morning
   m_TagString: Untagged
@@ -44626,7 +45025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 170.81633, y: 237.24199}
+  scrollPos: {x: -91.18367, y: -126.75801}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 640
@@ -44638,8 +45037,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1417568252}
-  selectedCommands: []
+  - {fileID: 1417568290}
+  selectedCommands:
+  - {fileID: 1417568289}
   variables:
   - {fileID: 1417568266}
   - {fileID: 1417568269}
@@ -47609,6 +48009,13 @@ MonoBehaviour:
   - {fileID: 1417568251}
   - {fileID: 1417568267}
   - {fileID: 1417568268}
+  - {fileID: 1417568324}
+  - {fileID: 1417568323}
+  - {fileID: 1417568322}
+  - {fileID: 1417568321}
+  - {fileID: 1417568320}
+  - {fileID: 1417568319}
+  - {fileID: 1417568258}
 --- !u!114 &1417568253
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -47722,6 +48129,19 @@ MonoBehaviour:
     booleanVal: 1
   affectChildren: 0
   visibleOLD: 0
+--- !u!114 &1417568258
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1417568131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 393
+  indentLevel: 0
 --- !u!114 &1417568259
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -47793,7 +48213,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 440.4018
-    y: 130.30115
+    y: 131.30115
     width: 134
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -48371,7 +48791,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 547.6479
-    y: 394.71646
+    y: 393.71646
     width: 227
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -48914,6 +49334,176 @@ MonoBehaviour:
   targetObject: {fileID: 415028854}
   methodName: clothingDecisionBreak_NoDressAlone
   delay: 0
+--- !u!114 &1417568319
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1417568131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 392
+  indentLevel: 1
+  storyText: As you wake up, you're trying to reccolect the dream you've had last
+    night. But alas, it slips your mind. The only thing you remember is a mirror.
+    You decide to just wake up and go about the day.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1417568320
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1417568131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18c5e8d46183346b59f64b820e71f97f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 391
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 547588422}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 1
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+--- !u!114 &1417568321
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1417568131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 390
+  indentLevel: 1
+  storyText: 
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1417568322
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1417568131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18c5e8d46183346b59f64b820e71f97f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 389
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 547588422}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 2
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+--- !u!114 &1417568323
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1417568131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 388
+  indentLevel: 1
+  storyText: 
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1417568324
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1417568131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 394
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 547588422}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 3
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
 --- !u!1 &1435149171
 GameObject:
   m_ObjectHideFlags: 0

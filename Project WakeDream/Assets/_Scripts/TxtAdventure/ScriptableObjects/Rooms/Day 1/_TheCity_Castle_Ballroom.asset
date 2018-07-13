@@ -9,14 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6c1dfde316082645948bf971b8c8d41, type: 3}
-  m_Name: _TheCity_Queens Quarters_Changed
+  m_Name: _TheCity_Castle_Ballroom
   m_EditorClassIdentifier: 
-  roomDescription: You You change into the queen outfit that the guard layed out for
-    you. There is this nice regal feeling. As you look in the mirror, suddenly you
-    look immensely like a queen.
-  roomName: Queens Quarters 1
+  roomDescription: You see people partying, happy for your return. You decide not
+    to partake and instead watch from the sidelines.
+  roomName: castle ballroom
   exits:
-  - keyString: north
-    exitDescription: The doors to the north of the room slam open reveling a hallway.
+  - keyString: west
+    exitDescription: The door to the hallway is to the west.
     valueRoom: {fileID: 11400000, guid: a442cf620ddd4ff438078de209bc173c, type: 2}
   interactableObjects: []

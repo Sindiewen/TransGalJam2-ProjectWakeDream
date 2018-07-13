@@ -15,8 +15,7 @@ MonoBehaviour:
   description: 'A beautiful, regal "queendress"  sitting on the bed. '
   interactions:
   - inputAction: {fileID: 11400000, guid: c1f37f4f7c3d57b4e87025d3e2217b64, type: 2}
-    textResponse: A white and blue schoolgirl outfit with a cute red bow accents the
-      collar with a nice blue skirt with a red trim.
+    textResponse: A big, regal looking dress with tons of lace. Looks goregous!
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 2104fd2dec11ba848a36db84f1ca817b, type: 2}
     textResponse: You take the queen dress

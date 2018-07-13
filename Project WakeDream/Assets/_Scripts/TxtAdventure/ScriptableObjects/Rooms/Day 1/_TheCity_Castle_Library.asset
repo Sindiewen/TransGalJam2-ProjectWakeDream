@@ -9,14 +9,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6c1dfde316082645948bf971b8c8d41, type: 3}
-  m_Name: _TheCity_Queens Quarters_Changed
+  m_Name: _TheCity_Castle_Library
   m_EditorClassIdentifier: 
-  roomDescription: You You change into the queen outfit that the guard layed out for
-    you. There is this nice regal feeling. As you look in the mirror, suddenly you
-    look immensely like a queen.
-  roomName: Queens Quarters 1
+  roomDescription: As you enter this room, you see rows and rows of books high up
+    to the ceeling. You surely can't read all these books.
+  roomName: Castle Library
   exits:
-  - keyString: north
-    exitDescription: The doors to the north of the room slam open reveling a hallway.
+  - keyString: east
+    exitDescription: Theres a door to the east leading back to the hallway
     valueRoom: {fileID: 11400000, guid: a442cf620ddd4ff438078de209bc173c, type: 2}
-  interactableObjects: []
+  interactableObjects:
+  - {fileID: 11400000, guid: 9d7d4e937fa73294eb035008b9ba48de, type: 2}

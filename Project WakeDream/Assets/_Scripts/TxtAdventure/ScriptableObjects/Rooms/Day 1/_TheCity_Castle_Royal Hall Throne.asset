@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6c1dfde316082645948bf971b8c8d41, type: 3}
+  m_Name: _TheCity_Castle_Royal Hall Throne
+  m_EditorClassIdentifier: 
+  roomDescription: 'As you sit down, you see the guard cxall everyone here. You see
+    hundreds of people storm in. An overwhelming, unsettling feeling is looming over
+    you with everyone staring at you. They think you''re they''re queen but you never
+    were queen.
+
+    You''re urged to speak. As you attempt to say something, everything instantly
+    goes dark.'
+  roomName: Royal Hall
+  exits:
+  - keyString: north
+    exitDescription: (You feel yourself waking up. go north to wake)
+    valueRoom: {fileID: 11400000, guid: a63799f36d8554b48bcd6cd94f30641f, type: 2}
+  interactableObjects: []
